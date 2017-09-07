@@ -1,0 +1,28 @@
+<p>
+  {{Listado}}
+
+<table>
+
+
+  <thead>
+    <tr>
+      <th>Juego</th>
+      <th>Jugador</th>
+      <th>Resultado</th>      
+    </tr>
+  </thead>
+
+
+  <tbody>
+    <tr *ngfor="let juego of Listado" >
+      <td>{{juego.nombre}}</td>
+      <td>{{juego.nombre}}</td>
+      <td *ngIf="juego.gano">Gano</td>
+      <td *ngIf="!juego.gano">Perdio</td>
+    </tr>
+  </tbody>
+
+
+</table>
+
+</p>
