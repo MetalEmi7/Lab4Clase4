@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { Juego } from '../Clases/Juego';
 
@@ -7,19 +8,21 @@ import { Juego } from '../Clases/Juego';
   styleUrls: ['./adivina-mas-listado.component.css']
 })
 export class AdivinaMasListadoComponent implements OnInit {
-
-public ListadoJuegos:Array<any>;
+//DECLARAR ARRAY QUE RECIBA JUEGOS
+  public ListadoJuegosJugados:Array<Juego>;
 
   constructor() {
-    this.ListadoJuegos = new Array<any>();
+    this.ListadoJuegosJugados = new Array<Juego>();
   }
   
   ngOnInit() {}
 
-TraerResultadodeJuego(juego:Juego)
+//TraerResultadodeJuego(juego:Juego);
+traerListado(Lista:Juego)
 {
-  this.ListadoJuegos.push();
-  console.log(this.ListadoJuegos);
+  //this.ListadoJuegosJugados = Lista;
+  this.ListadoJuegosJugados.push(Lista);
+  console.log("DESDE A+L - "+this.ListadoJuegosJugados);
 }
 
 

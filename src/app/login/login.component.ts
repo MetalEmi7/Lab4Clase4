@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+//Agregados para rutear a otros componentes.
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -9,15 +12,16 @@ export class LoginComponent implements OnInit {
 User:string;
 Pass:string;
 
-
-  constructor() { }
-
+  constructor(private route: ActivatedRoute, private router: Router)
+  {}
 
   Loguearse()
   {
-    if (this.User == "admin" && this.Pass == "Odin321") {
-      
-    }
+    this.router.navigate(["/menu"]);
+
+    console.log("Hola");
+    if (this.User == "admin" && this.Pass == "Odin321")
+      {}
   }
 
   ngOnInit() {

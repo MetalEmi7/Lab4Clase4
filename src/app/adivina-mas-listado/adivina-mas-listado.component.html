@@ -1,3 +1,7 @@
-<p>
-  adivina-mas-listado works!
-</p>
+<app-adivina-el-numero (listadoEnviado)="traerListado($event)" ></app-adivina-el-numero>
+
+
+<!-- ESTO NO ES ASIIIIIIIIIIIIIIII -->
+<!-- <app-listado-de-resultado Listado="{{ListadoJuegosJugados}}" ></app-listado-de-resultado> -->
+
+<app-listado-de-resultado [Listado]="ListadoJuegosJugados" ></app-listado-de-resultado>

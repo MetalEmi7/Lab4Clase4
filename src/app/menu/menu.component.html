@@ -1,11 +1,15 @@
-<p>
-  menu works!
-  <button type="button" navigate="" >Login</button>
+<body align="center">
 
-  .
-  <button type="button">Click Me!</button>
-  <button type="button">Click Me!</button>
-  <button type="button">Click Me!</button>
-  <button type="button">Click Me!</button>
 
-</p>
+  <h1>Menu</h1>
+  <!-- Ruteo por medio de funciones: ver mas en archivo .ts -->
+  <button type="button" (click)="Juegos('adivinaElNum')" >Adivina el numero</button>
+  <button type="button" (resultadoEnviado)="Metodoalguno()" (click)="Juegos('actividadAritmetica')" >Actividad aritmetica</button>
+  
+  <!-- Ruteo directo: Es necesario importar en APP.COMPONENTE.TS las librerias de ruteo: ver en APP.COMPONEN.TS -->
+  <!-- <button type="button" routerLink="/listaDeResultados" >Lista de resultados</button> -->
+  <button type="button" routerLink="/adivina+Lista" >Adivina + Lista</button>
+  <button type="button" routerLink="/error" >Juego</button>
+
+
+</body>

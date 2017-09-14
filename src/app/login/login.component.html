@@ -1,21 +1,22 @@
-<form action="/action_page.php">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
+<div class="container">
+<form>
 
-  <div class="container">
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="User" required>
+<h1 align="center">Menu</h1>
 
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="Pass" required>
+<div class="form-group">
+    <label><b>Nombre de cuenta</b></label>
+    <input type="text" class="form-control" placeholder="Enter Username" name="User" required>
+</div>
 
-    <button type="submit" (click)="Loguearse()" >Login</button>
+<div class="form-group">
+    <label><b>Contraseña</b></label>
+    <input type="password" class="form-control" placeholder="Enter Password" name="Pass" required>
+</div>
 
-    <input type="checkbox" checked="checked"> Remember me</div>
+<div align="center">
+<button align="center" class="btn btn-primary" type="submit" (click)="Loguearse()" >Login</button>
+<input type="checkbox" checked="checked"> Remember me
+</div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
 </form>
+</div>

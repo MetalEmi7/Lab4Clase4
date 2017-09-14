@@ -1,5 +1,7 @@
-import { Component, OnInit ,Input,EventEmitter} from '@angular/core';
+import { Component, OnInit ,EventEmitter} from '@angular/core';
 import { Juego } from '../Clases/Juego';
+
+import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-listado-de-resultado',
@@ -10,9 +12,10 @@ export class ListadoDeResultadoComponent implements OnInit {
 @Input()
   Listado:Array<any> = new Array<any>();
 
-constructor() { }
+constructor(){
+  console.log(this.Listado);
 
-ngOnInit() {
 }
 
+ngOnInit() {}
 }
